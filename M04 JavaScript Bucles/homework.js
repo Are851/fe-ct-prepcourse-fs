@@ -12,10 +12,14 @@ function mayoriaDeEdad(edad) {
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
-}
+   if(edad=>18){
+   return console.log("puede entrar");}
+else{
+   return "no puede entrar"}
+
 
 function conection(status) {
-   // El argumento "status" representa el estado de conexión de un usuario.
+   // El arconcgumento "status" representa el estado de conexión de un usuario.
    // Si el estado es igual a 1, el usuario está "Online".
    // Si el estado es igual a 2, el usuario está "Away".
    // De lo contrario, presumimos que el usuario está "Offline".
@@ -62,6 +66,14 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
+   if(num%0)return true
+   else return false
+ //  if(Number.isInteger(num)===true)
+/// return true
+ //else 
+ //return false
+
+
 }
 
 function fizzBuzz(num) {
@@ -70,6 +82,14 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
+   WebGLActiveInfo
+   if((num%3===0)&&(num/5===0)) return "fizzbuzz"
+   else if(num%3===0)
+   return "fizz"
+   else if if(num/5===0)
+   return "buzz"
+   else
+   return false
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -86,17 +106,30 @@ function esPrimo(num) {
    // Retornar true si "num" es primo.
    // De lo contrario retorna false.
    // [Pista 1]: un número primo sólo es divisible por sí mismo y por 1.
-   // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
+   // [Pista 2n]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
-   // Tu código:
+   // num
+   if(num<=1){
+   return false
+}
+   for(var i=2;i<num;i++){
+   if(num%i===0){
+   return false;}
+
+}
+
 }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   if(valor===true){
+      return "es verdadero"
+   }else{
+      return "es falso"
+      return false;}
 }
-
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
